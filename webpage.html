@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimetsu no Yaiba - Swordsmith Village (Dark Theme)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+
+    <style>
+        /* Dark Theme Body Background and Text */
+        body {
+            background-color: #121212;
+            /* Very dark gray */
+            color: #E0E0E0;
+            /* Light gray text */
+        }
+
+        /* Main Title Styling */
+        .title-main {
+            font-family: 'Cinzel', serif;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        /* Styling for the first row (header) */
+        .header-row {
+            padding: 10px 0;
+            border-bottom: 2px solid #500000;
+            /* Dark red border */
+        }
+
+        /* Logout Link Styling */
+        .logout-link {
+            color: #FF4500 !important;
+            /* Orange-Red for attention */
+            font-size: 20px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .logout-link:hover {
+            color: #FFD700 !important;
+            /* Gold on hover */
+        }
+
+        /* Menu Bar Styling */
+        .navbar {
+            background-color: #1E1E1E !important;
+            /* Slightly lighter dark background for navbar */
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #E0E0E0 !important;
+        }
+
+        .nav-link:hover {
+            color: #DC143C !important;
+            /* Crimson Red on hover */
+        }
+
+        /* Marquee/Announcement Bar Styling */
+        .announcement-bar {
+            background-color: #8B0000;
+            /* Dark Red background */
+            color: white;
+            padding: 5px 0;
+        }
+
+        /* Carousel Custom Indicators */
+        .carousel-indicators [data-bs-target] {
+            height: 10px;
+            background-color: #DC143C;
+            /* Crimson for indicators */
+            border-radius: 20%;
+        }
+
+        /* Card Customization */
+        .card {
+            background-color: #2C2C2C;
+            /* Darker background for cards */
+            color: #E0E0E0;
+            border: 1px solid #500000;
+            /* Dark red border for cards */
+            margin: 15px;
+            /* Added margin for spacing between cards */
+        }
+
+        .card-title {
+            font-weight: bold;
+            color: #DC143C;
+            /* Crimson Red for titles */
+        }
+
+        .card-text {
+            color: #B0B0B0;
+        }
+
+        /* Button Styling */
+        .btn-primary {
+            background-color: #DC143C;
+            border-color: #DC143C;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #FF4500;
+            border-color: #FF4500;
+        }
+
+        /* Custom Fonts for Specific Character Titles */
+        .font-gyomei {
+            font-family: 'Tangerine', cursive;
+            font-size: 34px !important;
+        }
+
+        .font-sanemi {
+            font-family: 'Rubik Glitch', system-ui;
+            font-size: 28px !important;
+        }
+
+        .font-shinobu {
+            font-family: 'UnifrakturMaguntia', cursive;
+            font-size: 32px !important;
+        }
+
+        .font-rengoku {
+            font-family: 'Metal Mania', system-ui;
+            font-size: 30px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-center header-row">
+            <div class="col-lg-1 col-md-2 col-sm-3 col-4">
+                <img src="logo.png" style="max-width: 100%;" alt="Demon Slayer Logo">
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-9 col-8 text-center text-md-start">
+                <span class="title-main" style="color: #E0E0E0;">Kimetsu no Yaiba </span>
+                <span class="title-main" style="color: #DC143C;">Swordsmith Village</span>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block text-center">
+                <i class="bi bi-mask" style="font-size:30px; color:#DC143C;"></i>
+                <i class="bi bi-eye-fill" style="font-size: 30px; color: #8A2BE2;"></i>
+                <i class="bi bi-fire" style="font-size: 30px; color: #FF4500;"></i>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                <span style="font-size: 18px;">刀鍛冶村へようこそ (Welcome to the Swordsmith Village)</span>
+            </div>
+            <div class="col-lg-1 col-md-2 col-sm-3 text-end">
+                <a href="#" class="logout-link">Logout</a>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-lg-9 col-md-8">
+                <nav class="navbar navbar-expand-lg bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">**Demon Corps**</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">**Home**</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Demonslayer Gear
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Nichirin Blades</a></li>
+                                        <li><a class="dropdown-item" href="#">Breathing Styles</a></li>
+                                        <li><a class="dropdown-item" href="#">Demon Slayer Mark</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">The Hashira</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-3 mt-md-0">
+                <div class="input-group">
+                    <input type="text" class="form-control bg-dark text-light" placeholder="Search for swords..."
+                        aria-label="Search for swords" aria-describedby="search-icon">
+                    <span class="input-group-text bg-danger border-danger" id="search-icon">
+                        <i class="bi bi-search" style="color: white;"></i>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row announcement-bar">
+            <marquee behavior="scroll" direction="left">
+                <h4>🔥 **Welcome to the Swordsmith Village** | The fight against Muzan continues! | **Focus your
+                    Breath!** 🔥</h4>
+            </marquee>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="og.gif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="hinokami.gif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="giyu.gif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="hell.gif" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+             <div class="card" style="width: 18rem;">
+                    <img src="ohh.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">yourichi</h5>
+                        <p class="card-text">Yoriichi Tsugikuni is a legendary, near-unbeatable Demon Slayer from the 400-year-old Sengoku period and the inventor of all Breathing Styles, including Sun Breathing. He was born with a Demon Slayer Mark on his forehead, an inherited ability to see through living things called the Transparent World, and was the only person to ever defeat Muzan.</p>
+                        <a href="https://www.google.com/search?q=yoriichi+demon+slayer&sca_esv=c44c4d982dff0690&rlz=1C1ONGR_enIN1173IN1176&sxsrf=AE3TifNuZnWvk7SoyyQTbCoClFbXGohS0Q%3A1763191322819&ei=GioYacvlMaiH4-EPpbTVqQk&oq=yourichi&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHlvdXJpY2hpKgIIAjINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBUj-FVD9A1jbDnACeACQAQCYAXegAXeqAQMwLjG4AQHIAQD4AQGYAgOgApABwgILEAAYgAQYkQIYigXCAgkQABiABBgKGAvCAgcQABiABBgKwgIHEC4YgAQYCpgDAOIDBRIBMSBAiAYBkAYMkgcDMi4xoAeGCbIHAzAuMbgHggHCBwMyLTPIBxI&sclient=gws-wiz-serp" class="btn btn-primary">go</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="mitsuri.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mitsuri</h5>
+                        <p class="card-text">Mitsuri Kanroji is a beloved and powerful character from Demon Slayer, known as the Love Hashira, one of the nine pillars of the Demon Slayer Corps. She is distinguished by her vibrant pink and green hair, a unique physique with muscle density eight times that of an average person, and exceptional flexibility. Her fighting style is a custom Love Breathing technique, derived from Flame Breathing, which she wields with a flexible, whip-like sword. </p>
+                        <a href="https://www.google.com/search?q=about+mitsuri&sca_esv=c44c4d982dff0690&rlz=1C1ONGR_enIN1173IN1176&sxsrf=AE3TifOsxOciLEmVfOSZQsn82JPnn0f1XA%3A1763191407207&ei=byoYaYuzDKyMseMPrp6emQo&ved=0ahUKEwjLpv3rz_OQAxUsRmwGHS6PJ6MQ4dUDCBE&uact=5&oq=about+mitsuri&gs_lp=Egxnd3Mtd2l6LXNlcnAiDWFib3V0IG1pdHN1cmkyCxAAGIAEGJECGIoFMgsQABiABBiRAhiKBTIIEAAYFhgKGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHki4K1CqBlj5J3ABeAGQAQCYAaEBoAH3DKoBBDUuMTC4AQPIAQD4AQGYAgqgAsEIwgIKEAAYsAMY1gQYR8ICBhAAGA0YHsICCxAAGIAEGIYDGIoFwgIFEAAY7wXCAggQABiABBiiBMICChAjGIAEGCcYigXCAgUQABiABMICCBAuGIAEGLEDwgIOEAAYgAQYsQMYgwEYigXCAgsQABiABBixAxiDAcICCBAAGIAEGLEDmAMA4gMFEgExIECIBgGQBgiSBwMzLjegB-9isgcDMi43uAe6CMIHBTItOS4xyAc6&sclient=gws-wiz-serp" class="btn btn-primary">go</a>
+                    </div>
+                </div>
+            <!--Row 5 card X 4-->
+            <div class="row"> card4</div>
+        </div>
+
+
+
+            <div class="row justify-content-center">
+                <div class="card col-3 m-0" style="width: 18rem;">
+                    <img src="giyomi.gif" class="card-img-top" alt="Gyomei Himejima">
+                    <div class="card-body">
+                        <h5 class="card-title font-gyomei">Gyomei Himejima
+                        </h5>
+                        <p class="card-text">Gyomei Himejima (悲ひ鳴め嶼じま 行ぎょう冥めい) is the **Stone Hashira** of the Demon
+                            Slayer Corps. Revered as the strongest Hashira, he is a blind monk known for his deep
+                            empathy, intense spiritual focus, and formidable Stone Breathing style.</p>
+                        <a href="https://www.google.com/search?q=gyomei+himejima+demon+slayer"
+                            class="btn btn-primary">Namu-Amidabutsu</a>
+                    </div>
+                </div>
+
+                <div class="card col-3 m-0" style="width: 18rem;">
+                    <img src="senami.gif" class="card-img-top" alt="Sanemi Shinazugawa">
+                    <div class="card-body">
+                        <h5 class="card-title font-sanemi">Sanemi Shinazugawa
+                        </h5>
+                        <p class="card-text">Sanemi Shinazugawa (不死しなず川がわ 実さね弥み) is the abrasive and aggressive **Wind
+                            Hashira**. Known for his intense hatred of demons, he uses the powerful Wind Breathing style
+                            and possesses a rare blood type highly intoxicating to demons.</p>
+                        <a href="https://www.google.com/search?q=sanemi+shinazugawa+demon+slayer"
+                            class="btn btn-primary">Destroyer of Demons</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="shinobu.gif" class="card-img-top" alt="Shionobu Kocho">
+                    <div class="card-body">
+                        <h5 class="card-title font-shinobu">Shinobu Kocho
+                        </h5>
+                        <p class="card-text">Shinobu Kocho (胡こ蝶ちょう しのぶ) is the **Insect Hashira**. Unable to cut a
+                            demon's head, she relies on her speed and unique, lightweight blade to inject fatal,
+                            wisteria-based poisons into demons, using the Insect Breathing style.</p>
+                        <a href="https://www.google.com/search?q=shinobu+kocho+demon+slayer" class="btn btn-primary">I'm
+                            furious</a>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
