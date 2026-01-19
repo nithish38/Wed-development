@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>OYO Style Hotel Booking</title>
@@ -8,22 +9,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+       
+        
+        .tophotel {
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .card-body {
+            background-color: rgb(255, 227, 67);
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.9);
+            transition: 0.6s ease;
+
+
+        }
+
         body {
             font-family: Arial, sans-serif;
-            
+
         }
-        .container my-5{
-            font-size:smaller;
+
+        .container my-5 {
+            font-size: smaller;
             color: #0f425e;
         }
-        .container{
+
+        .container {
             font-size: larger;
             text-align: left;
         }
-        .font{
+
+        .font {
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             color: rgb(242, 255, 0);
         }
+
         .hero-banner {
             background: url('https://giffiles.alphacoders.com/214/214462.gif') center/cover no-repeat;
             height: 300px;
@@ -33,17 +54,20 @@
             color: white;
             text-shadow: 2px 2px 5px #000;
         }
+
         .search-box {
             margin-top: -30px;
             background: white;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
         }
+
         .hotel-card img {
             height: 180px;
             object-fit: cover;
         }
+
         footer {
             background: #343a40;
             color: white;
@@ -53,108 +77,116 @@
         }
     </style>
 </head>
+
 <body style="background-color: rgb(192, 130, 6);">
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">SKYPIEA</a>
-        </div>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Stays</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Offers</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Hero -->
-<div class="hero-banner">
-   <div class="font">
-     <h1 style="font-size: 100px;">SKYPIEA</h1><br>
-    <h4 style="text-align: center;"> find your perfect rooms</h4>
-   </div>
-    
-</div>
-
-<!-- Search Form -->
-<div class="container search-box">
-    <form class="row g-2">
-        <div class="col-md-5">
-            <input type="text" class="form-control" placeholder="Enter city">
-        </div>
-        <div class="col-md-3">
-            <input type="date" class="form-control">
-        </div>
-        <div class="col-md-3">
-            <input type="date" class="form-control">
-        </div>
-        <div class="col-md-1 d-grid">
-            <button class="btn btn-primary">Search</button>
-        </div>
-    </form>
-</div>
-
-<!-- Hotel Cards -->
-<div class="container my-5">
-    <h2 class="text-center mb-4">Top Hotels</h2>
-    <div class="row g-4">
-
-        <!-- Hotel 1 -->
-        <div class="col-md-4">
-            <div class="card hotel-card shadow">
-                <img src="c:\Users\Ibscai28.DGVC-MCA\first\ROOM1.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Grand Stay Hotel</h5>
-                    <p class="card-text">Comfortable rooms in city center.</p>
-                    <p><strong>₹1999/night</strong></p>
-                    <a href="#" class="btn btn-primary w-100">Book Now</a>
-                </div>
+            <div class="container">
+                <a class="navbar-brand" href="#">SKYPIEA</a>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Stays</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <!-- Hotel 2 -->
-        <div class="col-md-4">
-            <div class="card hotel-card shadow">
-                <img src="https://images.pexels.com/photos/261139/pexels-photo-261139.jpeg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Royal Suites</h5>
-                    <p class="card-text">Luxury rooms with sea view.</p>
-                    <p><strong>₹2999/night</strong></p>
-                    <a href="#" class="btn btn-primary w-100">Book Now</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Hotel 3 -->
-        <div class="col-md-4">
-            <div class="card hotel-card shadow">
-                <img src="https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Comfort Inn</h5>
-                    <p class="card-text">Budget friendly with great service.</p>
-                    <p><strong>₹1499/night</strong></p>
-                    <a href="#" class="btn btn-primary w-100">Book Now</a>
-                </div>
-            </div>
+    <!-- Hero -->
+    <div class="hero-banner">
+        <div class="font">
+            <h1 style="font-size: 100px;">SKYPIEA</h1><br>
+            <h4 style="text-align: center;"> find your perfect rooms</h4>
         </div>
 
     </div>
-</div>
 
-<!-- Footer -->
-<footer>
-    <p>© 2026 OYO-Style Hotel Booking Clone</p>
-</footer>
+    <!-- Search Form -->
+    >
+    <div class="container search-box" style="background-color: rgb(181, 73, 0);">
+        <form class="row g-2">
+            <div class="col-md-5">
+                <input type="text" class="form-control" placeholder="Enter city">
+            </div>
+            <div class="col-md-3">
+                <input type="date" class="form-control">
+            </div>
+            <div class="col-md-3">
+                <input type="date" class="form-control">
+            </div>
+            <div class="col-md-1 d-grid">
+                <button class="btn btn-primary">Search</button>
+            </div>
+        </form>
+    </div>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Hotel Cards -->
+    <div class="container my-5">
+        <div class="tophotel">
+            <h2 class="text-center mb-4">Top Hotels</h2>
+        </div>
+        <div class="row g-4">
+
+            <!-- Hotel 1 -->
+            <div class="col-md-4">
+                <div class="card hotel-card shadow">
+                    <img src="c:\Users\Ibscai28.DGVC-MCA\first\ROOM1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Grand Stay Hotel</h5>
+                        <p class="card-text">Budget friendly with great service.</p>
+                        <p><strong>₹1000/night</strong></p>
+                        <a href="#" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel 2 -->
+            <div class="col-md-4">
+                <div class="card hotel-card shadow">
+                    <img src="https://i.pinimg.com/736x/a9/72/bf/a972bfb1fd26ba56560c107a75685ac4.jpg"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Suites</h5>
+                        <p class="card-text">Luxury rooms with sea view.</p>
+                        <p><strong>₹1999/night</strong></p>
+                        <a href="#" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel 3 -->
+            <div class="col-md-4">
+                <div class="card hotel-card shadow">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH0QlNlftCV_jSaXwjEU2NCiqa1_ojTj529Q&s"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Comfort Inn</h5>
+                        <p class="card-text">Comfortable rooms in city center.</p>
+                        <p><strong>₹2999/night</strong></p>
+                        <a href="#" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 OYO-Style Hotel Booking Clone</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
